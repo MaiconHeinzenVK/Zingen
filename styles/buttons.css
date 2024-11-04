@@ -22,6 +22,9 @@
     var(--brand-color-primary)
   );
   --btn-color: var(--sf-color);
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--btn-color);
 }
 
 .btn-sm{
@@ -60,9 +63,6 @@
 
   .btn[aria-label] {
     position: relative;
-  
-    
-  
     &::after {
       content: attr(aria-label);
       background: var(--btn-bg-color);
@@ -73,6 +73,16 @@
       z-index: 1;
     }
   }
+}
 
+@media (width >= 80em) {
 
+  .btn-sm{
+    padding: .75rem 1.5rem;
+    font-size: var(--fs-md);
+  }
+  .btn-md{
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
 }
