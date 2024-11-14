@@ -49,6 +49,7 @@ html{
   line-height: 1.6;
   color: var(--tx-primary);
 
+  overflow-x: hidden;
 }
 
 body{
