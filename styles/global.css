@@ -50,6 +50,8 @@ html{
   color: var(--tx-primary);
 
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 body{
